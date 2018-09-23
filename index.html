@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel='stylesheet' href='./style.css' />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script type='text/javascript' src='./logic.js'></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <div>
+
+            <div>
+                <h1 id='title'>Survey</h1>
+            </div>
+
+            <div id='section'>
+
+                <div class='row' id='describe'>
+                    <p id='description'>We appreciate your feedback!</p>
+                </div>
+
+                <form name='myForm' id='survey-form' onsubmit="return validateForm()">
+
+                    <div class='row'>
+                        <label class='leftbox' for='name'>Name</label>
+                        <input class='rightbox' name='emptyField' id='name name-label' type='text' required placeholder="Enter your name">
+                        
+                    </div>
+
+                    <div class='row'>
+                        <label class='leftbox' for='email'>Email</label>
+                        <input class='rightbox' name='emptyField' id='email email-label' type='email' required placeholder="Enter your Email">
+                    </div>
+
+                    <div class='row'>
+                        <label class='leftbox' for='number'>Age</label>
+                        <input class='rightbox' min='1' max='100' name='emptyField' id='number number-label' type='number' required placeholder="Enter your Age">
+                        <p id='errorMsg'></p>
+                    </div>
+
+                    <div class='row'>
+                        <label class='leftbox' for='occupation'>How would you describe yourself?</label>
+                        <select class='rightbox' id='occupation dropdown'>
+                            <option selected='selected'>Choose One</option>
+                            <option value="student">Student</option>
+                            <option value="fulltime">Full-Time Employed</option>
+                            <option value="napper">Professional Napper</option>
+                            <option value="confused">Confused</option>
+                        </select>
+                    </div>
+
+                    <div class='row'>
+                        <label class='leftbox' for='age'>How likely is that you would recommend <br>our services to a
+                            friend?</label>
+                        <div class='rightbox' class='col'>
+                            <div><input name='answer' id='yes' type='radio' placeholder="Definitely">Definitely </div>
+                            <div><input name='answer' id='no' type='radio' placeholder="No Way">No Way </div>
+                            <div><input name='answer' id='maybe' type='radio' placeholder="Maybe"> Maybe </div>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <label class='leftbox' for='occupation'>What do you like most about Real Fake Doors?</label>
+                        <select class='rightbox' id='occupation'>
+                            <option selected='selected' name='radio'>Choose One</option>
+                            <option value="student" name='radio'>Student</option>
+                            <option value="fulltime" name='radio'>Full-Time Employed</option>
+                            <option value="napper" name='radio'>Professional Napper</option>
+                            <option value="confused" name='radio'>Confused</option>
+                        </select>
+                    </div>
+
+                    <div class='row'>
+                        <label class='leftbox' for='occupation'>What do you like most about Real Fake Doors?</label>
+
+                        <div class='rightbox' class='col'>
+                            <div><input type="checkbox" value='first'> This one?</div>
+                            <div><input type="checkbox" value='second'> This one?</div>
+                            <div><input type="checkbox" value='third'> This one?</div>
+                            <div><input type="checkbox" value='fourth'> This one?</div>
+                            <div><input type="checkbox" value='fifth'> This one?</div>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+
+                        <label class=leftbox' for='commentbox'>Suggestions?</label>
+
+                        <div class='rightbox' class='col'>
+                            <textarea name="comment" id='commentbox' form="usrform"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class='row' id='submitArea'><button type='submit' id='submit' >Submit</button></div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+    </body>
+
+</html>
